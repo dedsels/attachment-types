@@ -7,7 +7,8 @@ header {
   background-color: white;
   position: sticky;
   margin: 0% 0% 5% 0%;
-  top: 0 px;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -40,6 +41,8 @@ header > img {
 }
 #zag {
   font-weight: 1000;
+  transform: translate(-30px);
+  animation: anim1 2s 1 ease-out;
 }
 .verx {
   padding: 0% 3%;
@@ -47,6 +50,8 @@ header > img {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-style: italic;
+  transform: translate(-30px);
+  animation: anim1 2s 1 ease-in;
 }
 .podzag {
   color: #4E6BA4;
@@ -54,7 +59,7 @@ header > img {
 #tabl {
   width: auto;
   height: auto;
-  margin: 0px 0px 30px 150px;
+  transform: translate(650px);
 }
 .tipu {
   color: #4E6BA4;
@@ -77,4 +82,15 @@ main {
 article {
   background-color: white;
   border-radius: 20px;
+}
+main:hover{
+  border:#19356B	 solid 10px;
+}
+@keyframes anim1{
+  0%{
+    transform: translate(-800px);
+  }
+  100%{
+    transform: translate(-30px);
+  }
 }
