@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <img src="images/image 2.jpg" alt="Логотип" />
+      <img id="logo2" src="image 2.jpg" alt="Логотип" />
       <div id="logo">Логика</div>
     </header>
     <main>
@@ -41,8 +41,8 @@
           наоборот, краткосрочных отношениях.
         </p>
         <img
-          id="tabl"
-          src="images/tipu.jpg"
+          class="tabl"
+          src="tipu.jpg"
           alt="Таблица типов привязанности"
         />
       </article>
@@ -227,7 +227,18 @@
           исправить с помощью специалиста или же научиться с этим жить.
         </p>
       </article>
+      <article>
+        <form>
+          <div>
+            <h2 class="otstyp podzag">Ваше мнение</h2>
+            <label class="otstyp" for="komm">Добавьте комментарий</label>
+            <textarea name="komm" class="komm otstyp" cols="40" rows="10" placeholder="Ваш комментарий"></textarea>
+          </div>
+          <button type="submit" id="submit">Отправить</button>
+        </form>
+    </article>
     </main>
-    <footer></footer>
+    <footer>
+    </footer>
   </body>
 </html>
